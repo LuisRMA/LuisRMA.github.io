@@ -1,0 +1,295 @@
+.botones{
+  text-align: center;
+  width: 90%;
+  /*margin-left: 30%;*/
+  margin-top: 80px;
+}
+
+a{
+  text-decoration: none;
+  color: #333;
+}
+
+
+.botones .boton{
+float: left;
+  margin-left: 315px;
+ border: 5px solid #333333;
+ padding: 15px 30px;
+ font-family: 'Pacifico',sans-serif;
+ font-size: 20px;
+ border-radius: 20%;
+ margin-right: 100%;
+ margin-bottom: 50px;
+}
+
+.botones .boton:hover{
+background-color: #333;
+color: #FFF;
+}
+
+
+.titulo{
+  margin-top: 150px;;
+  margin-left: 26%;
+  margin-right: 25%;
+font-size: 50px;
+text-align: center;
+font-family: 'Permanent Marker',sans-serif;
+}
+
+
+/***GALERIA*******/
+.galeria{
+  width: 80%;
+  text-align: center;
+  margin-left: 35px;
+margin-bottom: 300px;
+}
+
+.galeria .im1{
+  float: left;
+  width: 45%;
+}
+.img{
+  border: 5px solid #333;
+ border-radius: 10px;
+ margin-left: 320px;
+ height: 200px;
+ width: 250px;
+ opacity: 0.5;
+}
+
+.img:hover{
+  opacity: 1;
+}
+
+
+.galeria .im2{
+  float: left;
+  width: 45%;
+}
+
+.img2{
+  border: 5px solid #333;
+ border-radius: 10px;
+ margin-left: 180px;
+ height: 200px;
+  width: 250px;
+  opacity: 0.5;
+}
+
+.img2:hover{
+  opacity: 1;
+}
+
+
+
+/***GALERIA 2*******/
+.galeria2{
+  width: 90%;
+  text-align: center;
+margin-top: 150px;
+}
+
+.galeria2 .im3{
+  float: left;
+  width: 45%;
+
+}
+
+.img3{
+  border: 5px solid #333;
+ border-radius: 10px;
+ height: 200px;
+ width: 250px;
+ margin-left: 355px;
+opacity: 0.5;
+margin-bottom: 50px;
+}
+
+.img3:hover{
+  opacity: 1;
+}
+
+.galeria2 .im4{
+  float: left;
+  width: 45%;
+}
+
+
+
+ .img4{
+  border: 5px solid #333;
+ border-radius: 10px;
+margin-left: 80px;
+ height: 200px;
+ width: 250px;
+ opacity: 0.5;
+ margin-bottom: 50px;
+}
+
+
+
+.img4:hover{
+  opacity: 1;
+}
+
+.videociudad{
+
+  width: 80%;
+
+}
+
+.videoC{
+  border: 5px solid #333;
+ border-radius: 10px;
+ margin-left: 500px;
+ width: 30%;
+}
+
+/*****HOBBIE************/
+.titulo2{
+
+  margin-left: 26%;
+  margin-right: 25%;
+font-size: 50px;
+text-align: center;
+font-family: 'Permanent Marker',sans-serif;
+}
+
+
+
+.galeria3{
+  width: 80%;
+  text-align: center;
+  margin-left: 35px;
+  margin-bottom: 300px;
+}
+
+.galeria3 .im5{
+  float: left;
+  width: 45%;ç
+}
+
+.img5{
+
+  border: 5px solid #333;
+ border-radius: 10px;
+ height: 200px;
+ width: 250px;
+ margin-left: 320px;
+opacity: 0.5;
+}
+
+.img5:hover{
+  opacity: 1;
+}
+
+.galeria3 .im6{
+  float: left;
+  width: 45%;
+}
+
+
+
+ .img6{
+  border: 5px solid #333;
+ border-radius: 10px;
+margin-left: 210px;
+ height: 200px;
+ width: 250px;
+ opacity: 0.5;
+}
+
+
+
+.img6:hover{
+  opacity: 1;
+}
+
+
+.galeria4 .im7{
+  float: left;
+  width: 45%;
+
+}
+
+.img7{
+  border: 5px solid #333;
+ border-radius: 10px;
+ height: 200px;
+ width: 250px;
+ margin-left: 355px;
+opacity: 0.5;
+}
+
+.img7:hover{
+  opacity: 1;
+}
+
+.galeria3 .im8{
+  float: left;
+  width: 45%;
+}
+
+
+
+ .img8{
+  border: 5px solid #333;
+ border-radius: 10px;
+margin-left: 130px;
+ height: 200px;
+ width: 250px;
+ opacity: 0.5;
+}
+
+
+
+.img8:hover{
+  opacity: 1;
+}
+
+
+.videos{
+  width: 90%;
+  margin-top: 30px;
+
+}
+
+
+.videos .vid1{
+  float: left;
+  width: 45%;
+}
+
+.video1{
+    width: 50%;
+    border: 5px solid #333 ;
+    border-radius: 10px;
+    margin-left: 350px;
+}
+
+.video1:hover{
+  height: 100%;
+  width: 50%;
+
+}
+
+.videos .vid2{
+  float: left;
+  width: 45%;
+}
+
+.video2{
+    width: 50%;
+    height: 270px;
+    border: 5px solid #333 ;
+    border-radius: 10px;
+    margin-left: 180px;
+}
+
+.video2:hover{
+  height: 50%;
+  width: 50%
+}

@@ -1,0 +1,407 @@
+.botones{
+  text-align: center;
+  width: 90%;
+  /*margin-left: 30%;*/
+  height: auto;
+  margin-top: 80px;
+
+}
+
+a{
+  text-decoration: none;
+  color: #333;
+}
+
+ .botones .boton{
+   float: left;
+   margin-left: 355px;
+  border: 5px solid #333333;
+  padding: 15px 30px;
+  font-family: 'Pacifico',sans-serif;
+  font-size: 20px;
+  border-radius: 20%;
+  margin-right: 80px;
+  box-sizing: border-box;
+}
+
+.botones .boton:hover{
+ background-color: #333;
+ color: #FFF;
+}
+
+.botones .boton2{
+  float: left;
+  margin-left: 40px;
+ border: 5px solid #333333;
+ padding: 15px 30px;
+ font-family: 'Pacifico',sans-serif;
+ font-size: 20px;
+ border-radius: 20%;
+ margin-right: 50px;
+   box-sizing: border-box;
+}
+
+.botones .boton2:hover{
+ background-color: #333;
+ color: #FFF;
+}
+
+.botones .boton3{
+  float: left;
+  margin-left: 40px;
+ border: 5px solid #333333;
+ padding: 15px 30px;
+ font-family: 'Pacifico',sans-serif;
+ font-size: 20px;
+ border-radius: 20%;
+ margin-right: 100px;
+   box-sizing: border-box;
+}
+
+.botones .boton3:hover{
+ background-color: #333;
+ color: #FFF;
+}
+
+/*********Inicio************/
+.img1{
+  margin-top: 60px;
+width: 50%;
+height: 50%;
+border: 10px solid #333;
+margin-left: 25%;
+}
+
+.img1{
+  opacity: 0.5;
+  transition: 3s opacity;
+}
+
+.img1:hover{
+opacity: 3;
+}
+
+.titulo1{
+  margin-left: 26%;
+  margin-right: 25%;
+font-size: 70px;
+text-align: center;
+font-family: 'Odibee',sans-serif;
+}
+
+.linea{
+  border: 20px solid #c83e30;
+  border-style:  solid;
+  width: 50%;
+  margin-left: 25%;
+ border-radius: 10px;
+ margin-bottom: 50px;
+}
+
+/**SECCION 1**/
+.seccion1{
+  width: 90%;
+}
+
+ .seccion1 .titulo2{
+   width: 45%;
+font-family: 'Odibee',sans-serif;
+  font-size: 45px;
+  margin-left: 28%;
+  float: left;
+}
+
+  .seccion1 .img2{
+  border-radius: 50%;
+  width: 5%;
+  margin-left: 30px;
+  margin-top: 32px;
+  margin-bottom: 50px;
+}
+
+.texto1{
+  width: 56%;
+  font-family: 'Fira',sans-serif;
+  font-size: 25px;
+  margin-left: 25%;
+
+}
+
+.texto1_1{
+  width: 56%;
+  font-family: 'Fira',sans-serif;
+  font-size: 25px;
+  margin-left: 25%;
+}
+
+.texto1_2{
+  width: 56%;
+  font-family: 'Fira',sans-serif;
+  font-size: 25px;
+  margin-left: 25%;
+  margin-bottom: 60px;
+}
+
+
+/*****ABOUT ME*/
+.aboutme{
+  width: 90%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.aboutme .titulo3{
+  width: 30%;
+font-family: 'Odibee',sans-serif;
+ font-size: 45px;
+ margin-left: 300px;
+float: left;
+}
+
+ .aboutme .img3{
+  border-radius: 50%;
+  width: 5%;
+  margin-left: 2px;
+  margin-top: 32px;
+  margin-bottom: 40px;
+
+}
+
+
+
+.aboutme1{
+  margin-top: 1px;
+  width: 100%;
+}
+
+.titulo4{
+  font-family: 'Secular One',sans-serif;
+  margin-left: 195px;
+  font-size: 25px;
+  font-style: oblique;
+}
+
+.titulo5{
+  font-family: 'Secular One',sans-serif;
+  margin-left: 10px;
+  font-size: 25px;
+  font-style: oblique;
+}
+
+.aboutme1 .tabla1{
+  float: left;
+  width: 45%;
+  margin-left: 120px;
+  margin-top: 1px;
+}
+
+.tabla1_1{
+  margin-left: 180px;
+  font-family: 'Indie Flower',sans-serif;
+  line-height: 1.8;
+  font-size: 20px;
+}
+
+
+.aboutme1 .linea2{
+width: 15px;
+border-left: 5px solid #7f8c8d  ;
+height:690px;
+margin-bottom: 20px;
+margin-left: 5px;
+margin-top: 15px;
+float: left;
+
+}
+
+
+.aboutme1 .tabla2{
+
+  float: left;
+  width: 40%;
+  margin-left: 1px;
+}
+
+.tabla2_1{
+  margin-left: 10px;
+  font-family: 'Indie Flower',sans-serif;
+  line-height: 1.8;
+  font-size: 20px;
+  margin-right: 120px;
+}
+
+
+.lineaContacto{
+  margin-top: 780px;
+  border: 20px solid #c83e30;
+  width: 50%;
+  margin-left: 25%;
+ border-radius: 10px;
+ margin-bottom: 50px;
+}
+
+
+/****CONTACTAME****************/
+.tituloC{
+font-family: 'Odibee',sans-serif;
+ font-size: 45px;
+ margin-left: 320px;
+}
+
+
+.botones2{
+  text-align: center;
+  width: 90%;
+  margin-left: 100px;
+}
+
+.ins {
+  border-radius: 50%;
+  width: 10%;
+
+}
+
+.ins{
+  opacity: 0.5;
+  transition: 1.5s opacity;
+}
+
+.ins:hover{
+opacity: 3;
+}
+
+.tw {
+  border-radius: 50%;
+  width: 10%;
+    margin-left: 30px;
+}
+.tw{
+  opacity: 0.5;
+  transition: 1.5s opacity;
+}
+
+.tw:hover{
+opacity: 3;
+}
+
+.git {
+  border-radius: 50%;
+  width: 10%;
+    margin-left: 30px;
+}
+
+.git{
+  opacity: 0.5;
+  transition: 1.5s opacity;
+}
+
+.git:hover{
+opacity: 3;
+}
+
+
+/******EXTRA****************/
+.lineaextra{
+  margin-top: 150px;
+  border: 20px solid #c83e30;
+  width: 50%;
+  margin-left: 25%;
+ border-radius: 10px;
+ margin-bottom: 50px;
+}
+
+
+
+
+ .lineaextra2{
+  margin-top: 1px;
+  border: 2px solid #7f8c8d ;
+  width: 55%;
+  margin-left: 300px;
+
+}
+
+.extra {
+  margin-top: 1px;
+  background-size: 100px;
+  padding: 30px;
+margin-bottom: 1px;
+}
+
+ .extra .tituloE{
+  font-family: 'Secular One',sans-serif;
+  text-align: center;
+  font-size: 35px;
+  font-style: oblique;
+}
+
+.extra:hover{
+  width: 54%;
+  margin-left: 280px;
+  background-color: #7f8c8d ;
+  color: #FFF;
+}
+
+
+
+.lineaextra3{
+/* margin-top: 180px;*/
+ border: 2px solid #7f8c8d ;
+ width: 55%;
+ margin-left: 300px;
+
+}
+
+
+.extra2 {
+margin-top: 1px;
+  background-size: 100px;
+  padding: 30px;
+margin-bottom: 1px;
+}
+
+.extra2 .tituloE2{
+ font-family: 'Secular One',sans-serif;
+ text-align: center;
+ font-size: 35px;
+ font-style: oblique;
+}
+
+
+.lineaextra4{
+ margin-top: 1px;
+ border: 2px solid #7f8c8d ;
+ width: 55%;
+ margin-left: 300px;
+}
+
+.extra2:hover{
+  width: 54%;
+  margin-left: 280px;
+  background-color: #7f8c8d ;
+  color: #FFF;
+}
+
+
+@media screen and (max-width: 800px){
+
+
+  .botones
+  {
+
+width: 50%;
+  }
+
+  .boton{
+    float: none;
+  }
+
+body{
+  width: 80%;
+}
+.tabla1,
+.tabla2{
+  float:none;
+}
+
+}
