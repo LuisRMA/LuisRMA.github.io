@@ -3,9 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Luis Machorro</title>
+  <title>Luis Machorro </title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://api.fontshare.com/v2/css?f[]=clash-display@400,600,700&f[]=cabinet-grotesk@300,400,500,700,800&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 
   <style>
     /* ─── TOKENS ─────────────────────────────── */
@@ -327,6 +328,68 @@
     }
     .reveal.visible { opacity:1; transform: translateY(0); }
 
+    /* ─── CARRUSEL ───────────────────────────── */
+    .swiper {
+      width: 100%;
+      border-radius: var(--radius-sm);
+      overflow: hidden;
+    }
+    .swiper-slide {
+      background: var(--bg);
+      border-radius: var(--radius-sm);
+      border: 1px solid var(--border);
+      overflow: hidden;
+    }
+    .slide-img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      display: block;
+      background: var(--bg2);
+    }
+    /* placeholder cuando no hay imagen */
+    .slide-img-placeholder {
+      width: 100%; height: 160px;
+      background: linear-gradient(135deg, var(--bg2) 0%, #ddd9d0 100%);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 2rem;
+    }
+    .slide-body { padding: .9rem 1rem 1.1rem; }
+    .slide-name { font-weight: 700; font-size: .9rem; margin-bottom: .3rem; line-height: 1.3; }
+    .slide-desc { font-size: .78rem; color: var(--ink3); line-height: 1.55; margin-bottom: .65rem; }
+    .slide-stack { display: flex; flex-wrap: wrap; gap: .28rem; margin-bottom: .7rem; }
+    .slide-link {
+      display: inline-flex; align-items: center; gap: .35rem;
+      font-size: .72rem; font-weight: 700;
+      color: var(--accent); transition: gap var(--t);
+    }
+    .slide-link:hover { gap: .55rem; }
+    .slide-link svg { width: 13px; height: 13px; }
+
+    /* botones swiper */
+    .swiper-button-next,
+    .swiper-button-prev {
+      width: 32px !important; height: 32px !important;
+      background: var(--white);
+      border-radius: 50%;
+      box-shadow: var(--shadow-sm);
+      border: 1px solid var(--border);
+      color: var(--ink) !important;
+      top: 80px !important;
+    }
+    .swiper-button-next::after,
+    .swiper-button-prev::after {
+      font-size: .65rem !important; font-weight: 900;
+    }
+    .swiper-pagination-bullet {
+      background: var(--ink3) !important;
+      opacity: .4;
+    }
+    .swiper-pagination-bullet-active {
+      background: var(--accent) !important;
+      opacity: 1;
+    }
+
     /* ─── RESPONSIVE ──────────────────────────── */
     @media (max-width: 820px) {
       .main-grid { grid-template-columns: 1fr; }
@@ -354,7 +417,7 @@
 <header>
   <div class="container">
     <nav class="nav-inner">
-      <div class="nav-logo">Luis<span>.</span>RMA</div>
+      <div class="nav-logo">Luis<span>.</span>dev</div>
       <ul class="nav-links" id="navLinks">
         <li><a href="#sobre-mi">Sobre mí</a></li>
         <li><a href="#experiencia">Experiencia</a></li>
@@ -373,22 +436,13 @@
   <div class="container">
 
     <!-- FOTO (subible) -->
+     <!-- FOTO (subible) -->
     <div class="hero-photo-wrap">
-      <label for="photoInput" style="display:block;width:100%;height:100%;cursor:pointer">
-        <div class="photo-placeholder" id="photoPlaceholder">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-            <circle cx="12" cy="8" r="4"/>
-            <path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/>
-          </svg>
-          <span>-------</span>
-        </div>
-        <img id="photoImg" alt="Luis Machorro" />
-      </label>
-     
+      <img src="Img/yo.jpg" alt="Luis Machorro" style="width:100%; height:100%; object-fit:cover; display:block;" />
     </div>
 
     <h1 class="hero-greeting">Hola, soy <em>Luis</em> 👋</h1>
-    <p class="hero-role">Ingeniero en Computación &nbsp;</p>
+    <p class="hero-role">Ingeniero en Computación &nbsp;·&nbsp; Desarrollador Web &nbsp;·&nbsp; Cloud & IA</p>
 
     <!-- REDES SOCIALES -->
     <div class="social-row">
@@ -422,7 +476,7 @@
       <div class="card reveal" id="sobre-mi">
         <p class="card-label">Sobre mí</p>
         <p class="about-text">
-          Ingeniero en Computación egresado de la UAM Azcapotzalco con experiencia en desarrollo web, administración de plataformas CMS. Durante mi formación tuve un primer acercamiento práctico a la Inteligencia Artificial a través de mi Trabajo Terminal, donde implementé modelos de clasificación de texto con redes neuronales y en proyectos propios con procesamiento y visualización de datos usando servicios cloud en AWS. Deseo continuar mi desarrollo profesional y académico ingresando a la Maestría en Ciencias de la Computación de la UAM Azcapotzalco.
+          Ingeniero en Computación egresado de la UAM Azcapotzalco con experiencia en desarrollo web, administración de plataformas CMS y servicios cloud en AWS. Durante mi formación implementé modelos de clasificación de texto con redes neuronales (LSTM) y desarrollé proyectos de visualización de datos en tiempo real. Me interesa continuar mi desarrollo académico en la Maestría en Ciencias de la Computación.
         </p>
         <div class="skills-wrap">
           <div>
@@ -442,7 +496,7 @@
             </div>
           </div>
           <div>
-            <div class="skill-group-label">Cloud</div>
+            <div class="skill-group-label">Cloud & DevOps</div>
             <div class="chips">
               <span class="chip cl">AWS Lambda</span><span class="chip cl">DynamoDB</span>
               <span class="chip cl">API Gateway</span><span class="chip cl">CloudWatch</span>
@@ -450,7 +504,7 @@
             </div>
           </div>
           <div>
-            <div class="skill-group-label">IA y CMS</div>
+            <div class="skill-group-label">IA & CMS</div>
             <div class="chips">
               <span class="chip ai">TensorFlow</span><span class="chip ai">Keras/LSTM</span>
               <span class="chip ai">NLP</span><span class="chip">WordPress</span>
@@ -491,43 +545,95 @@
       <!-- PROYECTOS -->
       <div class="card reveal">
         <p class="card-label">Proyectos Destacados</p>
-        <div class="proj-list">
-          <div class="proj-item">
-            <div class="proj-name">Clasificación de Documentos Legales</div>
-            <div class="proj-desc">Modelos RNN/LSTM para documentos laborales con hasta 88% de precisión + interfaz web en tiempo real.</div>
-            <div class="proj-stack">
-              <span class="ptag">Python</span><span class="ptag">Keras</span>
-              <span class="ptag">LSTM</span><span class="ptag">NLP</span>
+
+        <div class="swiper" id="proyectosSwiper">
+          <div class="swiper-wrapper">
+
+            <!-- Slide 1 -->
+            <div class="swiper-slide">
+              <div class="slide-img-placeholder">🤖</div>
+              <div class="slide-body">
+                <div class="slide-name">Clasificación de Documentos Legales</div>
+                <div class="slide-desc">Modelos RNN/LSTM para documentos laborales con hasta 88% de precisión + interfaz web en tiempo real.</div>
+                <div class="slide-stack">
+                  <span class="ptag">Python</span><span class="ptag">Keras</span>
+                  <span class="ptag">LSTM</span><span class="ptag">NLP</span>
+                </div>
+                <a href="https://github.com/LuisRMA" target="_blank" class="slide-link">
+                  Ver en GitHub
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+              </div>
             </div>
-          </div>
-          <div class="proj-item">
-            <div class="proj-name">Visualización de Datos Ambientales</div>
-            <div class="proj-desc">Plataforma en tiempo real con sensores Smability, gráficas dinámicas y análisis estadístico serverless en AWS.</div>
-            <div class="proj-stack">
-              <span class="ptag">AWS Lambda</span><span class="ptag">DynamoDB</span><span class="ptag">Python</span>
+
+            <!-- Slide 2 -->
+            <div class="swiper-slide">
+              <img class="slide-img" src="Img/ambientales.jpg" alt="Visualización de Datos Ambientales">
+              <div class="slide-body">
+                <div class="slide-name">Visualización de Datos Ambientales</div>
+                <div class="slide-desc">Plataforma en tiempo real con sensores Smability, gráficas dinámicas y análisis estadístico en AWS.</div>
+                <div class="slide-stack">
+                  <span class="ptag">AWS Lambda</span><span class="ptag">DynamoDB</span><span class="ptag">Python</span>
+                </div>
+                <a href="https://github.com/LuisRMA" target="_blank" class="slide-link">
+                  Ver en GitHub
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+              </div>
             </div>
-          </div>
-          <div class="proj-item">
-            <div class="proj-name">Sitio Institucional — Sociología UAM</div>
-            <div class="proj-desc">Reconstrucción completa con directorio interactivo de docentes, animaciones y diseño accesible.</div>
-            <div class="proj-stack">
-              <span class="ptag">WordPress</span><span class="ptag">Joomla</span><span class="ptag">JS</span>
+
+            <!-- Slide 3 -->
+            <div class="swiper-slide">
+              <img class="slide-img" src="Img/sociologia.png" alt="Sitio Institucional — Sociología UAM">
+              <div class="slide-body">
+                <div class="slide-name">Sitio Institucional — Sociología UAM</div>
+                <div class="slide-desc">Reconstrucción completa con directorio interactivo de docentes, animaciones y diseño accesible.</div>
+                <div class="slide-stack">
+                  <span class="ptag">WordPress</span><span class="ptag">Joomla</span><span class="ptag">JS</span>
+                </div>
+                <a href="https://github.com/LuisRMA" target="_blank" class="slide-link">
+                  Ver en GitHub
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+              </div>
             </div>
-          </div>
-          <div class="proj-item">
-            <div class="proj-name">Sistema de Gestión de Gimnasio</div>
-            <div class="proj-desc">Módulos Laravel: socios, membresías, corte del día, histórico y exportación a Excel.</div>
-            <div class="proj-stack">
-              <span class="ptag">PHP</span><span class="ptag">Laravel</span><span class="ptag">MySQL</span>
+
+            <!-- Slide 4 -->
+            <div class="swiper-slide">
+              <img class="slide-img" src="Img/gym.jpg" alt="Sistema de Gestión de Gimnasio">
+              <div class="slide-body">
+                <div class="slide-name">Sistema de Gestión de Gimnasio</div>
+                <div class="slide-desc">Módulos Laravel: socios, membresías, corte del día, histórico y exportación a Excel.</div>
+                <div class="slide-stack">
+                  <span class="ptag">PHP</span><span class="ptag">Laravel</span><span class="ptag">MySQL</span>
+                </div>
+                <a href="https://github.com/LuisRMA" target="_blank" class="slide-link">
+                  Ver en GitHub
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+              </div>
             </div>
-          </div>
-          <div class="proj-item">
-            <div class="proj-name">Infraestructura VPN Centralizada</div>
-            <div class="proj-desc">VPS con WireGuard para centralizar tráfico de 10 clientes bajo una misma IP pública.</div>
-            <div class="proj-stack">
-              <span class="ptag">Ubuntu</span><span class="ptag">WireGuard</span><span class="ptag">Linux</span>
+
+            <!-- Slide 5 -->
+            <div class="swiper-slide">
+              <div class="slide-img-placeholder">🔒</div>
+              <div class="slide-body">
+                <div class="slide-name">Infraestructura VPN Centralizada</div>
+                <div class="slide-desc">VPS con WireGuard para centralizar tráfico de 10 clientes bajo una misma IP pública.</div>
+                <div class="slide-stack">
+                  <span class="ptag">Ubuntu</span><span class="ptag">WireGuard</span><span class="ptag">Linux</span>
+                </div>
+                <a href="https://github.com/LuisRMA" target="_blank" class="slide-link">
+                  Ver en GitHub
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+              </div>
             </div>
+
           </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
         </div>
       </div>
 
@@ -586,7 +692,7 @@
 <footer>
   <div class="container">
     <div class="footer-inner">
-      <span>© 2025 <strong>Luis Roberto Machorro Aguilar</strong> &nbsp;·&nbsp; Ciudad de México</span>
+      <span>© 2026 <strong>Luis Roberto Machorro Aguilar</strong> &nbsp;·&nbsp; Ciudad de México</span>
       <div class="footer-links">
         <a href="https://github.com/LuisRMA" target="_blank">GitHub nuevo</a>
         <a href="https://github.com/LuisMachorro" target="_blank">GitHub antiguo</a>
@@ -634,6 +740,19 @@
     reader.readAsDataURL(file);
   });
 </script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    new Swiper('#proyectosSwiper', {
+      slidesPerView: 1,
+      spaceBetween: 0,
+      loop: true,
+      pagination: { el: '.swiper-pagination', clickable: true },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
 
 </body>
 </html>
